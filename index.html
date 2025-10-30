@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Detective - Computer Investigation Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="title">Mr.Detective v1.0</div>
+        <div class="status-bar" id="statusBar">READY</div>
+    </div>
+    
+    <div class="container">
+        <div class="sidebar">
+            <button class="button" id="investigateBtn">INVESTIGATE</button>
+            <button class="button" id="interrogateBtn">INTERROGATE</button>
+            <button class="button" id="refreshBtn">REFRESH</button>
+            
+            <div class="file-input-section">
+                <input type="file" id="exeFile" accept=".exe" style="display: none;">
+                <button class="button" id="selectExeBtn">SELECT EXE FILE</button>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="debug-display" id="debugDisplay">
+                <div class="debug-line">Mr.Detective initialized...</div>
+                <div class="debug-line">System ready for investigation.</div>
+                <div class="debug-line">Select an operation to begin.</div>
+            </div>
+            
+            <div class="command-line">
+                <div class="prompt">C:\MrDetective&gt;</div>
+                <input type="text" class="command-input" id="commandInput" placeholder="Type commands here...">
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="system-info">
+            <span id="cpuInfo">CPU: Scanning...</span> | 
+            <span id="ramInfo">RAM: Scanning...</span> | 
+            <span id="osInfo">OS: Scanning...</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
